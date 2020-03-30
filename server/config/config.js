@@ -19,9 +19,9 @@ let urlBD;
 if (process.env.NODE_ENV === 'dev') {
     urlBD = 'mongodb://localhost:27017/cafeteria';
 } else {
-    urlBD = 'mongodb://root:0vKJKRughzCeiYmU@cluster0-ay88q.mongodb.net/cafeteria';
+    urlBD = process.env.MONGO.URI;
 }
 
 process.env.URLDB = urlBD;
-//
+//'mongodb://root:0vKJKRughzCeiYmU@cluster0-ay88q.mongodb.net/cafeteria'
 //
