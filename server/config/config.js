@@ -41,3 +41,9 @@ if (process.env.NODE_ENV === 'dev') {
 process.env.URLDB = urlBD;
 //'mongodb://root:0vKJKRughzCeiYmU@cluster0-ay88q.mongodb.net/cafeteria'
 //
+
+// =====================
+// Google Client ID
+// =====================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '215107632445-58n59ij1miel04an96rn1p9uvuj66oq6.apps.googleusercontent.com';
