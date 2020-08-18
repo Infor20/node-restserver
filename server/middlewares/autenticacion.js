@@ -8,6 +8,7 @@ let verificaToken = (req, res, next) => {
 
     let token = req.get('token');
 
+
     jwt.verify(token, process.env.SEMILLA, (err, decoded) => {
 
         if (err) {
